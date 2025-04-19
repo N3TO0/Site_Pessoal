@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: #474747;
+}
+
+.navegation {
+    width: 100vw;
+    height: 55px;
+    background-color: #ffffffe8;
+    display: flex;
+    flex-direction: row;
+    border: #474747 solid 1px;
+    box-sizing: border-box;
+}
+
+.div_nav1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon_initial {
+    margin: 0 0 0 25px;
+    width: 50px;
+}
+
+.lista {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+div_bottons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    width: 100vw;
+    height: calc(100vh - 55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+button{
+    border-radius: 4px;
+    background-color: #7e849699;
+    margin: 0 0 15px 0 ;
+    height: 45px;
+    width: 550px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons_bottons{
+    width: 24px;
+    margin: 0 0 0 40%;
+
+}
+
+h1{
+    font-size: 24px;
+    color: white;
+    font-family: "Poppins", sans-serif ;
+    font-weight: 300;
+    margin: 0 0 25px 0 ;
+}
+
+p{
+    font-size: 18px;
+    color: white;
+    font-family: sans-serif ;
+    font-weight: 400;
+    margin: 0 0 0 20px;
+
+}
