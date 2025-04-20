@@ -44,54 +44,23 @@ a {
     color: black;
 }
 
-div_bottons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.content{
-    width: 100vw;
-    height: calc(100vh - 55px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 
-}
+
 button{
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: #7e849699;
-    margin: 0 0 15px 0 ;
-    height: 45px;
-    width: 550px;
+    margin: 0 0 px 0 ;
+    height: 40px;
+    width: 40px;
     border: 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+
 }
 
 .icons_bottons{
     width: 24px;
-    margin: 0 0 0 40%;
-
-}
-
-h1{
-    font-size: 24px;
-    color: white;
-    font-family: "Poppins", sans-serif ;
-    font-weight: 300;
-    margin: 0 0 25px 0 ;
-}
-
-p{
-    font-size: 18px;
-    color: white;
-    font-family: sans-serif ;
-    font-weight: 400;
-    margin: 0 0 0 20px;
-
 }
