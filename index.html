@@ -1,42 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt_BR">
 <head>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Pessoal</title>
+    <link rel="icon" href="/img/icons/icon_web.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <nav class="navegation">
-        <div class="div_nav1">
-            <a href="index.html"><img class="icon_initial" src="img/icon_cod2.png"
-                    alt="icon_cod"></a>
-        </div>
 
-        <ul class="lista">
-            <li><a href="sobre_mim.html">Sobre mim</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li class="li_contato"><a href="contato.html">Contatos</a></li>
+    <nav>
+        <img class="icon_logo" src="/img/icons/icon_cod2.png" alt="icon_logo">
+
+        <ul class="nav_initial_links">
+            <li>Sobre mim</li>
+            <li>Skills</li>
+            <li>Porjetos</li>
+            <li><b>Contatos</b></li>
         </ul>
     </nav>
 
-    <section class="section_1">
-        <div class="div_section1">
+    <section class="homeSaction">
+        
+        <div class="img_home"></div>
 
-        </div>
-        <div class="div_section2">
-            <div class="div_section2_filho">
+        <div class="home_text">
+            <div class="sub_home_text">
                 <h1>Iderval Neto</h1>
                 <h2>Desenvolvedor Full Stack</h2>
-                <button class="button_curriculo"  onclick="window.open('https://www.linkedin.com/in/iderval-neto/','_blanck')"><img class="icon_button" src="img/icon_download.png"
-                        alt="icon_de_download"><p class="p_button">Baixar Curriculo</p></button>
+                
+                <div class="button_download">
+                    <a href="/sources/Currículo_dev.pdf" download="Currículo_dev.pdf">
+                        <img class="icon_button_download" src="/img/icons/icon_download.png" alt="icon_download">
+                        <p>Baixar Curriculo</p>
+                    </a>
+                </div> 
             </div>
         </div>
-    </section>
-</body>
 
+    </section>
+    <section class="aboutSaction">
+
+        <div class="text_about">
+            <div class="sub_text_about">
+                <h1>Sobre mim</h1>
+                <p class="textprincipal">Olá! Me chamo Iderval Neto, tenho 22 anos e sou estudante de Sistemas de Informação na Faculdade Paraíso, em Juazeiro do Norte - CE. Atualmente, estou me preparando para me tornar um desenvolvedor Full Stack. Tenho me dedicado ao estudo de tecnologias como Python, Django, MySQL, JavaScript e React, buscando construir soluções completas que unam back-end e front-end. Já participei de projetos acadêmicos com foco em aplicações web, como o desenvolvimento de um sistema para uma clínica odontológica e um portal digital para valorizar o artesanato local.</p>
+                <button class="button_about" onclick="window.open('https://www.linkedin.com/in/iderval-neto/','_blank')">
+                    <img class="icon_link_aba" src="/img/icons/icon_link_aba.png" alt="icon_direct"> 
+                    <p>Confira meu Linkedin</p>
+                </button>
+            </div>
+        </div>
+        <div  class="img_about"></div>
+
+    </section>
+    <section class="skillsSaction">
+        <div class="filter">
+            <h1>SKILLS</h1>
+            
+            <ul>
+                <li><p>HTML</p></li>
+                <li><p>CSS</p></li>
+                <li><p>JavaScript</p></li>
+                <li><p>React JS</p></li>
+                <li><p>Python</p></li>
+                <li><p>Django</p></li>
+                <li><p>Git GitHub</p></li>
+                <li><p>SQL</p></li>
+                <li><p>MySQL</p></li>
+            </ul>
+            
+            <div class="button_skills" >
+                <a href="/sources/Currículo_dev.pdf" download="Currículo_dev.pdf">
+                    <img class="icon_button_skills" src="/img/icons/icon_download2.png" alt="icon_button_skills">
+                    <p>Baixar Currículo Completo</p>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="projectSection">
+
+        <h1>Projetos</h1>
+
+    </section>
+    <section class="contactSection">
+
+        <h1>Contatos</h1>
+
+    </section>
+
+    
+</body>
 </html>

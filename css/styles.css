@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+}
+
+nav{
+    background-color: #EDEDED;
+    display: flex;
+    width: 100VW;
+    height: 47px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0px 4px 4px 0px #00000025;
+    position: fixed;
+
+    .nav_initial_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li{
+            margin: 0 0 0 120px;
+        }
+    }
+    .icon_logo{
+        width: 50px;
+    }
+}
+
+
+
+.homeSaction{
+    height: 100vh;
+    padding-top: 47px;
+    background-color: #474747;
+    box-sizing: border-box;
+    h1{
+        color: white;
+        font-size: 6rem;
+        margin-bottom: 20px;
+        font-weight: 450;
+    }
+    h2{
+        color: rgba(255, 255, 255, 0.432);
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        color: black;
+    }
+
+    .img_home{
+        height: 100%;
+        width: 35%;
+        background-image: url(../img/photos/Img_home.jpg);
+        background-position: 60% 15%;
+        background-size: cover; 
+    }
+    .home_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100vw - 35%);
+
+        .sub_home_text{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            height: 80%;
+            justify-content: center;
+        }    
+        .button_download{
+            color: black;
+            background-color: white;
+            width: fit-content;
+            height: fit-content;
+            padding: 16px 18px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 6px;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        .icon_button_download{
+            width: 40px;
+        }
+    }
+}
+
+.aboutSaction{
+    background-color: #474747;
+    display: flex;
+    justify-content: space-between;
+
+    .text_about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 65%;
+        padding: 5% 7%;
+        color: white;
+    }
+    
+    .sub_text_about{
+        height: fit-content;
+        width: fit-content;
+        margin: 10% 5%;
+    }
+    h1{
+        color: white;
+        font-size: 6rem;
+        margin-bottom: 20px;
+        font-weight: 450;
+    }
+    .textprincipal{
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-bottom: 30px;
+        font-weight: 370;
+        line-height: 1.7rem;
+    }
+    .button_about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+        padding: 15px 55px;
+        font-size: 1.6rem;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.164);
+        border: solid 0px ;
+        border-radius: 7px;
+        p{
+            margin-left: 8px;
+        }
+        cursor: pointer;
+    }
+    .img_about{
+        background-image: url(/img/photos/img_about.jpeg);
+        height: 100%;
+        width: 35%;
+        background-position: 20% 20%;
+        background-size: cover;
+    }
+}
+
+.skillsSaction{
+    background-image: url(../img/photos/background_skills.jpeg);
+    background-size: cover;
+    background-position: 20% 9%;  
+
+    .filter{
+        background-color: rgba(255, 255, 255, 0.31);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        color: black;
+        font-size: 4.2rem;
+        font-family:"Rubik", "Poppins", sans-serif;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    ul{
+
+        margin-bottom: 50px;
+        height: fit-content;
+        width: 37%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    li{
+        width: fit-content;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.473);
+        color: white;
+        font-weight: 100;
+        font-size: 1.4rem;
+        border-radius: 6px;
+        padding: 10px 10px;
+        margin-top: 30px;
+    }
+    .button_skills{
+        color: white;
+        background-color: black;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 10px;
+        display: flex;
+        font-size: 1.2rem;
+        padding: 10px 35px;
+        border-radius: 6px;
+        margin-top: 50px;
+
+        cursor: pointer;
+        .icon_button_skills{
+            width: 30px;
+            height: 25px;
+        }
+        a{
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+        }
+    }
+}
+
+.projectSection{
+    background-color: #474747;
+}
+
+.contactSection{
+    background-color: #474747;
+}
+
