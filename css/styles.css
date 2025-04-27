@@ -185,10 +185,9 @@ nav{
         margin-bottom: 20px;
     }
     ul{
-
         margin-bottom: 50px;
         height: fit-content;
-        width: 37%;
+        width: 38%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -204,6 +203,9 @@ nav{
         border-radius: 6px;
         padding: 10px 10px;
         margin-top: 30px;
+        margin-right: 7px;
+        margin-left: 7px;
+        
     }
     .button_skills{
         color: white;
