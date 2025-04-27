@@ -26,8 +26,12 @@ nav{
         flex-direction: row;
         justify-content: space-between;
         li{
+            font-weight:350;
             margin: 0 0 0 120px;
         }
+    a{
+        color: black;
+    }
     }
     .icon_logo{
         width: 50px;
@@ -36,7 +40,7 @@ nav{
 
 
 
-.homeSaction{
+#homeSaction{
     height: 100vh;
     padding-top: 47px;
     background-color: #474747;
@@ -100,7 +104,7 @@ nav{
     }
 }
 
-.aboutSaction{
+#aboutSaction{
     background-color: #474747;
     display: flex;
     justify-content: space-between;
@@ -159,7 +163,7 @@ nav{
     }
 }
 
-.skillsSaction{
+#skillsSaction{
     background-image: url(../img/photos/background_skills.jpeg);
     background-size: cover;
     background-position: 20% 9%;  
@@ -209,7 +213,7 @@ nav{
         padding: 10px 10px;
         display: flex;
         font-size: 1.2rem;
-        padding: 10px 35px;
+        padding: 10px 30px;
         border-radius: 6px;
         margin-top: 50px;
 
@@ -217,6 +221,7 @@ nav{
         .icon_button_skills{
             width: 30px;
             height: 25px;
+            margin-right: 5px;
         }
         a{
             text-decoration: none;
@@ -228,11 +233,99 @@ nav{
     }
 }
 
-.projectSection{
+#projectSection{
     background-color: #474747;
+    width: 0px;
+    height: 0px;
 }
 
-.contactSection{
+#contactSection{
     background-color: #474747;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .text_contact{
+        width: 77%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .sub_text_contact{
+        width: 70%;
+        height: fit-content;
+        h1{
+            font-size: 5rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+        .text_principal{
+            margin-bottom: 30px;
+            text-align: justify;
+            line-height: 2rem;
+            
+        }
+        .p_social{
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            line-height: 2rem;
+            background-color: rgba(245, 222, 179, 0);
+            border: solid 0px;
+            cursor: pointer;
+            color: white;
+            font-weight: 200;
+            img{
+                margin-right: 10px;
+                width: 25px;
+            }
+        }
+        .p_social2{
+            margin-bottom: 80px;
+        }
+        .icons_siciais{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            height: fit-content;
+        }
+        .icon{
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            background-color: rgba(255, 255, 255, 0.167);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a{
+                width: 80%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                width: 80%;
+                height: 80%;
+            }
+        }
+    }
+    .img_contact{
+        background-image: url(/img/photos/img_contact.jpeg);
+        height: 100vh;
+        width: 33%;
+        background-position: 10% 10%;
+        background-size: cover;
+    }
 }
 
