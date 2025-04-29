@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+
+:root{
+    /*nav*/
+    --background-color-nav: #EDEDED;
+    --color-p-a-nav: black;
+    --shadow-nav:0px 4px 4px 0px #00000025;
+
+    /*Section home*/
+    --background-color-section-home: #474747;
+    --color-p-a-home: black;
+    --color-h1-home: white;
+    --color-h2-home: rgba(255, 255, 255, 0.432);
+    --background-color-button-home: white;
+
+    /*Section about*/
+    --background-color-section-about:  #474747;
+    --color-p-a-about: white;
+    --color-h1-about: white;
+    --background-color-button-about: rgba(255, 255, 255, 0.164);
+    --color-text-button-about: white;
+
+    /*Section skills*/
+    --background-filter-color-section-skills: rgba(255, 255, 255, 0.31);
+    --color-p-a-skills: white;
+    --color-h1-skills: black;
+    --background-color-button-skills: rgba(0, 0, 0, 0.859);
+    --color-text-button-skills: white;
+    --background-color-ul-skills: rgba(0, 0, 0, 0.473);
+
+    /*Section project*/
+    --background-color-section-project:  #474747 ;
+
+    /*Section contact*/
+    --background-color-section-contact:  #474747;
+    --color-p-a-contact: white;
+    --color-h1-contact: white;
+    --background-color-icon: rgba(255, 255, 255, 0.167);
+    --background-color-button-social-contact: rgba(255, 255, 255, 0);
+    
+}
 *{
     font-family: "Rubik", sans-serif;
 }
@@ -10,14 +50,14 @@ section{
 }
 
 nav{
-    background-color: #EDEDED;
+    background-color: var(--background-color-nav);
     display: flex;
     width: 100VW;
     height: 47px;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    box-shadow: 0px 4px 4px 0px #00000025;
+    box-shadow: var(--shadow-nav);
     position: fixed;
 
     .nav_initial_links{
@@ -28,30 +68,31 @@ nav{
             font-weight:350;
             margin: 0 0 0 120px;
         }
-    a{
-        color: black;
-    }
+        a{
+            color: var(--color-p-a-nav);
+        }
     }
     .icon_logo{
         width: 50px;
     }
-}
 
+
+}
 
 
 #homeSaction{
     height: 100vh;
     padding-top: 47px;
-    background-color: #474747;
+    background-color: var(--background-color-section-home);
     box-sizing: border-box;
     h1{
-        color: white;
+        color: var(--color-h1-home);
         font-size: 6rem;
         margin-bottom: 20px;
         font-weight: 450;
     }
     h2{
-        color: rgba(255, 255, 255, 0.432);
+        color: var(--color-h2-home);
         font-size: 3rem;
         font-weight: 300;
         margin-bottom: 40px;
@@ -60,7 +101,7 @@ nav{
         text-decoration: none;
         display: flex;
         flex-direction: row;
-        color: black;
+        color: var(--color-p-a);
     }
 
     .img_home{
@@ -84,8 +125,8 @@ nav{
             justify-content: center;
         }    
         .button_download{
-            color: black;
-            background-color: white;
+            color: var(--color-p-a-home);
+            background-color: var(--background-color-button-home);
             width: fit-content;
             height: fit-content;
             padding: 16px 18px;
@@ -104,7 +145,7 @@ nav{
 }
 
 #aboutSaction{
-    background-color: #474747;
+    background-color: var(--background-color-section-about);
     display: flex;
     justify-content: space-between;
 
@@ -115,7 +156,7 @@ nav{
         height: 100%;
         width: 65%;
         padding: 5% 7%;
-        color: white;
+        color: var(--color-p-a-about);
     }
     
     .sub_text_about{
@@ -124,7 +165,7 @@ nav{
         margin: 10% 5%;
     }
     h1{
-        color: white;
+        color: var(--color-h1-about);
         font-size: 6rem;
         margin-bottom: 20px;
         font-weight: 450;
@@ -144,8 +185,8 @@ nav{
         width: fit-content;
         padding: 15px 55px;
         font-size: 1.6rem;
-        color: white;
-        background-color: rgba(255, 255, 255, 0.164);
+        color: var(--color-text-button-about);
+        background-color: var(--background-color-button-about);
         border: solid 0px ;
         border-radius: 7px;
         p{
@@ -168,7 +209,7 @@ nav{
     background-position: 20% 9%;  
 
     .filter{
-        background-color: rgba(255, 255, 255, 0.31);
+        background-color: var(--background-filter-color-section-skills);
         height: 100%;
         width: 100%;
         display: flex;
@@ -177,7 +218,7 @@ nav{
         align-items: center;
     }
     h1{
-        color: black;
+        color: var(--color-h1-skills);
         font-size: 4.2rem;
         font-family:"Rubik", "Poppins", sans-serif;
         font-weight: 900;
@@ -195,8 +236,8 @@ nav{
     li{
         width: fit-content;
         height: fit-content;
-        background-color: rgba(0, 0, 0, 0.473);
-        color: white;
+        background-color: var(--background-color-ul-skills);
+        color: var(--color-p-a-skills);
         font-weight: 100;
         font-size: 1.4rem;
         border-radius: 6px;
@@ -206,8 +247,8 @@ nav{
         margin-left: 7px;
     }
     .button_skills{
-        color: white;
-        background-color: black;
+        color: var(--color-text-button-skills);
+        background-color: var(--background-color-button-skills);
         width: fit-content;
         height: fit-content;
         padding: 10px 10px;
@@ -228,19 +269,19 @@ nav{
             display: flex;
             flex-direction: row;
             align-items: center;
-            color: white;
+            color: var(--color-p-a-skills);
         }
     }
 }
 
 #projectSection{
-    background-color: #474747;
+    background-color: var(--background-color-section-project);
     width: 0px;
     height: 0px;
 }
 
 #contactSection{
-    background-color: #474747;
+    background-color: var(--background-color-section-contact);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -251,7 +292,7 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: var(--color-p-a-contact);
     }
     .sub_text_contact{
         width: 70%;
@@ -260,6 +301,7 @@ nav{
             font-size: 5rem;
             font-weight: 500;
             margin-bottom: 30px;
+            color: var(--color-h1-contact);
         }
         p{
             font-size: 1.3rem;
@@ -276,10 +318,10 @@ nav{
             flex-direction: row;
             align-items: center;
             line-height: 2rem;
-            background-color: rgba(245, 222, 179, 0);
+            background-color: var(--background-color-button-social-contact);
             border: solid 0px;
             cursor: pointer;
-            color: white;
+            color: var(--color-p-a-contact);
             font-weight: 200;
             img{
                 margin-right: 10px;
@@ -301,7 +343,7 @@ nav{
             width: 60px;
             height: 60px;
             margin-right: 10px;
-            background-color: rgba(255, 255, 255, 0.167);
+            background-color: var(--background-color-icon);
             border-radius: 8px;
             display: flex;
             flex-direction: row;
