@@ -452,15 +452,16 @@ section{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 2px;
         }
         li{
             width: 80%;
             border-radius: 0;
-            margin: 10px 0px;
+            margin: 5px 0px;
         }
         h1{
             font-size: 3.5rem;
+            margin-bottom: 3rem;
         }
     }
     #contactSection{
