@@ -43,16 +43,10 @@
 *{
     font-family: "Rubik", sans-serif;
 }
-
-section{
-    height: 100vh;
-    display: flex;
-}
-
 nav{
     background-color: var(--background-color-nav);
     display: flex;
-    width: 100VW;
+    width: 100vw;
     height: 47px;
     justify-content: space-between;
     align-items: center;
@@ -64,9 +58,15 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        width: 55.5%;
+        height: 100%;
+        margin-right: 10px;
         li{
             font-weight:350;
-            margin: 0 0 0 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
         a{
             color: var(--color-p-a-nav);
@@ -75,16 +75,19 @@ nav{
     .icon_logo{
         width: 50px;
     }
-
-
 }
 
+section{
+    min-height: 100vh;
+    display: flex;
+}
 
-#homeSaction{
+#homeSection{
     height: 100vh;
     padding-top: 47px;
     background-color: var(--background-color-section-home);
     box-sizing: border-box;
+    width: 100%;
     h1{
         color: var(--color-h1-home);
         font-size: 6rem;
@@ -139,22 +142,24 @@ nav{
             cursor: pointer;
         }
         .icon_button_download{
-            width: 40px;
+        width: 1.8rem;
+        margin-right: 10px;
         }
     }
 }
 
-#aboutSaction{
+#aboutSection{
     background-color: var(--background-color-section-about);
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 
     .text_about{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        width: 65%;
+        height: 100vh;
+        width: 65vw;
         padding: 5% 7%;
         color: var(--color-p-a-about);
     }
@@ -196,21 +201,22 @@ nav{
     }
     .img_about{
         background-image: url(../img/photos/img_about.jpeg);
-        height: 100%;
-        width: 35%;
+        height: 100vh;
+        width: 35vw;
         background-position: 20% 20%;
         background-size: cover;
     }
 }
 
-#skillsSaction{
+#skillsSection{
     background-image: url(../img/photos/background_skills.jpeg);
     background-size: cover;
     background-position: 20% 9%;  
+    box-sizing: border-box;
 
     .filter{
         background-color: var(--background-filter-color-section-skills);
-        height: 100%;
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -276,19 +282,20 @@ nav{
 
 #projectSection{
     background-color: var(--background-color-section-project);
-    width: 0px;
-    height: 0px;
+    display: none;
 }
 
 #contactSection{
+    box-sizing: border-box;
     background-color: var(--background-color-section-contact);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
 
     .text_contact{
-        width: 77%;
-        height: 100%;
+        width: 77vw;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -365,9 +372,131 @@ nav{
     .img_contact{
         background-image: url(../img/photos/img_contact.jpeg);
         height: 100vh;
-        width: 33%;
+        width: 33vw ;
         background-position: 10% 10%;
         background-size: cover;
     }
 }
 
+@media(max-width: 600px){
+
+   #homeSection{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+
+        .img_home{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 100%;
+            margin-bottom: 2rem;
+        }
+        h1{
+            font-size: 2.6rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        h2{
+            font-size: 1.71rem;
+            margin-bottom: 7rem;
+        }
+        .home_text{
+            width: 100vw;
+        }
+        .sub_home_text{
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    #aboutSection{
+        .img_about{
+            display: none;
+        }
+        .text_about{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .sub_text_about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        h1{
+            font-size: 2.6rem;
+            margin-bottom: 2.3rem;
+        }
+        .textprincipal{
+            font-size: 1.15rem;
+            margin-bottom: 3rem;
+            border-radius: 6px;
+        }
+        .button_about{
+            font-size: 1.02rem;
+            padding: 15px;
+            width: 100%;
+            
+        }
+    }
+    #skillsSection{
+        ul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        li{
+            width: 80%;
+            border-radius: 0;
+            margin: 10px 0px;
+        }
+        h1{
+            font-size: 3.5rem;
+        }
+    }
+    #contactSection{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .img_contact{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 100%;
+            margin-bottom: 2rem;
+            background-position: 10% 18%;
+        }
+        .text_contact{
+            width: 100vw;
+            height: 80%;
+        }
+        .sub_text_contact{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 3rem;
+            }
+            .text_principal{
+                width: 85%;
+                margin-bottom: 3rem;
+            }
+        }
+
+    }
+}
+@media (max-width: 830px){
+    nav{
+        display: none;
+    }
+}
