@@ -490,7 +490,10 @@ section{
             }
             .text_principal{
                 width: 85%;
-                margin-bottom: 3rem;
+                margin-bottom: 1.5rem;
+            }
+            .p_social2{
+                margin-bottom: 1.5rem;
             }
         }
 
